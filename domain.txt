@@ -1,0 +1,11 @@
+www.insuite.cn
+yxnxjyz.mypscloud.com
+pscloud-juye.mypscloud.com
+cxjyz.mypscloud.com
+demo.insuite.cn
+#xidianbangong.insuite.cn
+harbor.insuite.cn
+authorization.insuite.cn
+master.insuite.cn
+currency-rate.svc.insuite.cn
+www.insuite.net
