@@ -1,5 +1,6 @@
 package main
 
+/*通常，JSON 使用 unicode 替换特殊 HTML 字符，例如 < 变为 \ u003c。如果要按字面对这些字符进行编码，则可以使用 PureJSON。*/
 import "github.com/gin-gonic/gin"
 
 func main() {
@@ -20,5 +21,12 @@ func main() {
 	})
 
 	// 监听并在 0.0.0.0:8080 上启动服务
-	r.Run(":8080")
+	r.Run("localhost:8080")
 }
+
+/*测试验证效果*/
+//普通json
+//{"html":"\u003cb\u003eHello, world!\u003c/b\u003e"}
+//真的是把尖括号转成Unicode了
+//pureJSON
+//{"html":"<b>Hello, world!</b>"}

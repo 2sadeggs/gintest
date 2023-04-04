@@ -1,5 +1,11 @@
 package main
 
+/*中间件与路由
+全局中间件
+与路由绑定的中间件 特定路由触发中间件
+路由与中间件搭配简单格式：authorized := r.Group("/", AuthRequired())
+
+*/
 import "github.com/gin-gonic/gin"
 
 func main() {

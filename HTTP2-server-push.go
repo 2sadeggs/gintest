@@ -40,3 +40,6 @@ func main() {
 	//r.RunTLS(":8080", "./testdata/server.pem", "./testdata/server.key")
 	r.RunTLS(":8080", "./insuite.crt", "./insuite.key")
 }
+
+/*简单记一下 这是一个http2 server 端的推送*/
+//怎么 http不能推 http2 才行？

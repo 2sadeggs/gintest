@@ -1,5 +1,6 @@
 package main
 
+/*使用 AsciiJSON 生成具有转义的非 ASCII 字符的 ASCII-only JSON。*/
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
@@ -19,5 +20,5 @@ func main() {
 	})
 
 	// 监听并在 0.0.0.0:8080 上启动服务
-	r.Run(":8080")
+	r.Run("localhost:8080")
 }

@@ -5,6 +5,8 @@ import (
 	"net/http"
 )
 
+/*使用 LoadHTMLGlob() 或者 LoadHTMLFiles()*/
+//使用上边两个方法加载html模板 美其名曰渲染
 func main() {
 	router := gin.Default()
 	router.LoadHTMLGlob("templates/*")

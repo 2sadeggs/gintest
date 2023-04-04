@@ -1,5 +1,7 @@
 package main
 
+/*直接从HTTP返回中取数据 不是把数据存储成文件 再从文件中取 二是直接从返回值中取 提升效率*/
+//我的证书自动更新系统有用到类似 从OSS对象存储的返回中直接去内容 返回个请求端
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"

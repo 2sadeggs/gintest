@@ -25,7 +25,10 @@ func main() {
 			}
 		}
 	})
-	router.Run(":8080")
+	router.Run("localhost:8080")
 }
 
+//git  bash 模拟
 //curl -v --form user=user --form password=password http://localhost:8080/login
+//curl -v --form user=user1 --form password=password http://localhost:8080/login
+/*简单理解 访问/login上下文 默认校验form的user和password两个参数  简单的登录验证*/
